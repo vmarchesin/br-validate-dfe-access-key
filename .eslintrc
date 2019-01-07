@@ -1,0 +1,12 @@
+{
+  "extends": "airbnb-base",
+  "env": {
+    "mocha": true
+  },
+  "parser": "babel-eslint",
+  "rules": {
+    "no-else-return": ["error", { "allowElseIf": true }],
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+    "quote-props": ["error", "as-needed", { "numbers": true }]
+  }
+}
