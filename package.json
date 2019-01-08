@@ -1,5 +1,5 @@
 {
-  "name": "validate-dfe-access-key",
+  "name": "br-validate-dfe-access-key",
   "version": "0.1.0",
   "author": "Vinicius Marchesin Araujo",
   "description": "Um validador de chave de acesso de DFes (Documentos Fiscais eletrônicos)",
@@ -10,7 +10,7 @@
     "build": "webpack --mode production",
     "lint": "eslint src/*",
     "mocha": "mocha --require @babel/register",
-    "test": "mocha --require @babel/register -- src/*"
+    "test": "nyc --reporter=html mocha --require @babel/register -- src/*"
   },
   "keywords": [
     "chave-de-acesso",
@@ -40,6 +40,7 @@
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
     "mocha": "^5.2.0",
+    "nyc": "^13.1.0",
     "undefined": "^0.1.0",
     "webpack": "^4.28.3",
     "webpack-cli": "^3.2.0"

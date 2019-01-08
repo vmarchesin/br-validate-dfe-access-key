@@ -1,0 +1,8 @@
+.nyc_output/
+coverage/
+assets/
+src/
+
+.eslintrc
+.babelrc
+webpack.config.js
