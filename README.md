@@ -1,8 +1,15 @@
 # Validador de Chaves de Acesso de DFes (Documentos Fiscais Eletrônicos)
 
+[![npm](https://img.shields.io/npm/v/br-validate-dfe-access-key.svg)]()
+[![npm](https://img.shields.io/npm/dt/br-validate-dfe-access-key.svg)]()
+![Travis](https://img.shields.io/travis/com/vmarchesin/br-validate-dfe-access-key.svg)
+![Maintenance](https://img.shields.io/maintenance/yes/2019.svg)
+
 ![Logo NFe](./assets/nfe-logo.png)
 
-Uma **Chave de Acesso** é um identificador único que referencia um DFe (Documento Fiscal Eletrônico), controlado pela SEFAZ (Secretaria da Fazenda, órgão do governo que gerencia os DFes).
+Uma **Chave de Acesso** é um identificador único que referencia um DFe (Documento Fiscal Eletrônico), controlado pela SEFAZ (Secretaria da Fazenda, órgão do governo que gerencia os DFes). Esta biblioteca valida apenas o formato da chave de acesso. Não é possível recuperar a informação ou confirmar a existência da chave de acesso através desta biblioteca.
+
+Esta biblioteca possui zero dependências.
 
 ```js
   import validateAccessKey from 'br-validate-access-key';
@@ -10,6 +17,15 @@ Uma **Chave de Acesso** é um identificador único que referencia um DFe (Docume
   validateAccessKey('35120859597245000190550000000095831710040056'); //true
   validateAccessKey('35-12/08-59.597.245/0001-90-55-000-000.009.583-171.004.005-6'); //true
   validateAccessKey('42100484684182000157550010000000020108042108'); //false
+```
+
+## INSTALAÇÃO
+
+[![NPM](https://nodei.co/npm/br-validate-dfe-access-key.png)](https://www.npmjs.com/package/br-validate-dfe-access-key)
+
+
+```bash
+npm i -S br-validate-dfe-access-key
 ```
 
 ## VALIDAÇÕES INDIVIDUAIS
