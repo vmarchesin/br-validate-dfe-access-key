@@ -12,7 +12,7 @@ Uma **Chave de Acesso** é um identificador único que referencia um DFe (Docume
 Esta biblioteca possui zero dependências.
 
 ```js
-  import validateAccessKey from 'br-validate-access-key';
+  import validateAccessKey from 'br-validate-dfe-access-key';
 
   validateAccessKey('35120859597245000190550000000095831710040056'); //true
   validateAccessKey('35-12/08-59.597.245/0001-90-55-000-000.009.583-171.004.005-6'); //true
