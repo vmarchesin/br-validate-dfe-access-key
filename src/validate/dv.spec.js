@@ -16,6 +16,11 @@ describe('DV', () => {
     it('should validate invalid access key', () => {
       expect(validateDV('42100484684182000157550010000000020108042102')).to.be.equal(false);
     });
+
+    it('should validate invalid access key with size other than 44', () => {
+      expect(validateDV('4210048468418200015755001000000002010804210')).to.be.equal(false);
+      expect(validateDV('421004846841820001575500100000000201080421022')).to.be.equal(false);
+    });
   });
 
   describe('Valid', () => {
